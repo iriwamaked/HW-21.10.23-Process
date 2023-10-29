@@ -1,0 +1,114 @@
+﻿<Window x:Class="HW_21._10._23_Process.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HW_21._10._23_Process"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="800">
+    
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="AliceBlue" Offset="0"/>
+                <GradientStop Color="Blue" Offset="1.5"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="0" Margin="10" VerticalAlignment="Center">
+            <TextBlock  TextWrapping="Wrap">
+                Завдання 1: Розробіть додаток, який вміє запускати дочірній процес та чекати його звершення.
+            </TextBlock>
+            <Button  Name="StartChildProcess" Margin="0,15,0,0" HorizontalAlignment="Center" Width="Auto" Click="StartChildProcessToTask1">
+                Старт дочірнього процесу
+            </Button>
+            <TextBlock>
+                Код завершення:
+            </TextBlock>
+            <TextBlock Name="ExitCode" >
+            </TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Row="0" Grid.Column="1" Margin="10" VerticalAlignment="Center">
+            <TextBlock  TextWrapping="Wrap">
+                Завдання 2: Розробіть додаток, який вміє запускати дочірній процес. Залежно
+                від вибору користувача, батьківський додаток має чекати
+                завершення дочірнього процесу та відображати код завершення
+                або примусово завершувати роботу дочірнього процесу..
+            </TextBlock>
+            <Button  HorizontalAlignment="Center" Width="Auto" Click="StartChildProcess1">
+                Старт дочірнього процесу
+            </Button>
+            <TextBlock Name="ExitCode1" >
+            </TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="0" Margin="10" VerticalAlignment="Center">
+            <TextBlock  TextWrapping="Wrap">
+            Завдання 3: Розробіть додаток, який вміє запускати дочірній процес і
+            передавати йому аргументи командного рядка. Аргументами
+            мають бути два числа та операція, яку необхідно виконати.
+            </TextBlock>
+            <Label>Введіть два числа:</Label>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <!--<Button Grid.Column="0" Click="ButtonNumber_Click" Height="20" VerticalAlignment="Top">1</Button>
+                <Button Grid.Column="1" Click="ButtonNumber_Click">2</Button>-->
+                <Button Grid.Column="2" Click="ButtonNumber_Click1">3</Button>
+                <!--<Button Grid.Column="3" Click="ButtonNumber_Click">4</Button>
+                <Button Grid.Column="4" Click="ButtonNumber_Click">5</Button>
+                <Button Grid.Column="5" Click="ButtonNumber_Click">6</Button>-->
+                <Button Grid.Column="6" Click="ButtonNumber_Click2">7</Button>
+                <!--<Button Grid.Column="7" Click="ButtonNumber_Click">8</Button>
+                <Button Grid.Column="8" Click="ButtonNumber_Click">9</Button>-->
+            </Grid>
+            <Label>Введите операцию с числами:</Label>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" Click="ButtonOperation_Click">+</Button>
+                <Button Grid.Column="1" Click="ButtonOperation_Click">-</Button>
+                <Button Grid.Column="2" Click="ButtonOperation_Click">/</Button>
+                <Button Grid.Column="3" Click="ButtonOperation_Click">*</Button>
+            </Grid>
+            <TextBlock Name="ArgumentsForString">
+                
+            </TextBlock>
+            <Button Margin="0,20,0,0" HorizontalAlignment="Center" Width="Auto" Click="StartChildProcess2">
+                Старт дочірнього процесу
+            </Button>
+            <TextBlock  >
+            </TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="1" VerticalAlignment="Center">
+            <TextBlock TextWrapping="Wrap">
+                Завдання 3: Розробіть додаток, який вміє запускати дочірній процес і
+                передавати йому аргументи командного рядка. Аргументами
+                мають бути два числа та операція, яку необхідно виконати.
+            </TextBlock>
+            <Button Click="Button_ClickToFile" Margin="10">Обрати шлях до файлу</Button>
+            <Label>Введіть слово для пошуку</Label>
+            <TextBox Height="25" Name="Input" TextChanged="Input_TextChanged" ></TextBox>
+            <Button Click="Button_ClickToFind" Margin="10">Перейти до пошуку</Button>
+        </StackPanel>
+    </Grid>
+</Window>

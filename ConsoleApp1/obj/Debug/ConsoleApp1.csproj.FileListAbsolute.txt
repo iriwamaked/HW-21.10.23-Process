@@ -1,0 +1,7 @@
+D:\2. ШАГ Уроки\3. Пары\2. 2 семестр ООП\42. 21.10.23 -Системное программирование\HW-21.10.23-Process\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+D:\2. ШАГ Уроки\3. Пары\2. 2 семестр ООП\42. 21.10.23 -Системное программирование\HW-21.10.23-Process\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+D:\2. ШАГ Уроки\3. Пары\2. 2 семестр ООП\42. 21.10.23 -Системное программирование\HW-21.10.23-Process\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+D:\2. ШАГ Уроки\3. Пары\2. 2 семестр ООП\42. 21.10.23 -Системное программирование\HW-21.10.23-Process\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.AssemblyReference.cache
+D:\2. ШАГ Уроки\3. Пары\2. 2 семестр ООП\42. 21.10.23 -Системное программирование\HW-21.10.23-Process\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+D:\2. ШАГ Уроки\3. Пары\2. 2 семестр ООП\42. 21.10.23 -Системное программирование\HW-21.10.23-Process\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+D:\2. ШАГ Уроки\3. Пары\2. 2 семестр ООП\42. 21.10.23 -Системное программирование\HW-21.10.23-Process\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
